@@ -5,7 +5,8 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Shifa Siddiqui | Portfolio</title>
 
@@ -13,83 +14,86 @@
 
 </head>
 
-
 <body>
-
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav>
+    <nav class="navbar">
 
-        <h2 class="logo">Shifa.</h2>
+        <div class="logo">
+            Shifa<span>.</span>
+        </div>
 
-        <ul>
+        <ul class="nav-links">
 
-            <li>
-                <a href="#home">Home</a>
-            </li>
+            <li><a href="#home">Home</a></li>
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+            <li><a href="#about">About</a></li>
 
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
+            <li><a href="#skills">Skills</a></li>
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+            <li><a href="#projects">Projects</a></li>
 
-            <li>
-                <a href="#education">Education</a>
-            </li>
+            <li><a href="#experience">Experience</a></li>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#education">Education</a></li>
+
+            <li><a href="#resume">Resume</a></li>
+
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
 
     </nav>
 
 
-    <!-- ================= HOME SECTION ================= -->
+
+    <!-- ================= HOME ================= -->
 
     <section id="home" class="hero">
 
-        <div class="hero-text">
+        <div class="hero-content">
 
-            <p class="hello">
-                Hello, I'm
+            <p class="welcome">
+
+                WELCOME TO MY PORTFOLIO
+
             </p>
 
             <h1>
-                Shifa Siddiqui
+
+                Hi, I'm <span>Shifa Siddiqui</span>
+
             </h1>
 
-            <h3>
-                B.Sc. IT Student | Aspiring Front-End Developer
-            </h3>
+            <h2>
 
-            <p class="description">
+                B.Sc. IT Student & Aspiring Front-End Developer
 
-                I enjoy building clean, responsive, and user-friendly
-                websites while continuously improving my web development skills.
+            </h2>
+
+            <p class="hero-description">
+
+                I create clean, responsive and modern websites
+                using HTML, CSS and JavaScript while continuously
+                improving my Front-End Development skills.
 
             </p>
 
-
-            <!-- HERO BUTTONS -->
-
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn">
+                <a href="#projects"
+                   class="btn">
+
                     View Projects
+
                 </a>
 
-                <a href="#contact" class="btn btn-outline">
+                <a href="#contact"
+                   class="btn btn-outline">
+
                     Contact Me
+
                 </a>
 
             </div>
@@ -99,117 +103,160 @@
     </section>
 
 
-    <!-- ================= ABOUT SECTION ================= -->
 
-    <section id="about">
+    <!-- ================= ABOUT ================= -->
 
-        <h2>
-            About Me
-        </h2>
+    <section id="about"
+             class="section">
 
-        <p id="aboutText">
+        <p class="section-tag">
 
-            Hello! I am Shifa Siddiqui, a B.Sc. IT student currently learning
-            Frontend Web Development. I enjoy building responsive websites
-            and continuously improving my coding skills.
+            ABOUT ME
 
         </p>
 
+        <h2 class="section-title">
 
-        <!-- DAY 7 DOM MANIPULATION BUTTON -->
+            Get To Know Me
 
-        <button id="showMoreBtn" class="btn">
+        </h2>
 
-            Show More
+        <div class="about-box">
 
-        </button>
+            <p>
+
+                Hello! I am
+                <strong>Shifa Siddiqui</strong>,
+                a B.Sc. IT student with a passion
+                for Front-End Web Development.
+
+            </p>
+
+            <p>
+
+                I enjoy creating clean,
+                responsive and user-friendly
+                websites while learning
+                modern web technologies.
+
+            </p>
+
+        </div>
 
     </section>
 
 
-    <!-- ================= SKILLS SECTION ================= -->
 
-    <section id="skills">
+    <!-- ================= SKILLS ================= -->
 
-        <h2>
-            Skills
+    <section id="skills"
+             class="section light-section">
+
+        <p class="section-tag">
+
+            MY SKILLS
+
+        </p>
+
+        <h2 class="section-title">
+
+            Technologies I Work With
+
         </h2>
 
+        <div class="cards">
 
-        <div class="skills-container">
+            <div class="card">
 
+                <div class="icon">
 
-            <!-- HTML -->
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
                     HTML
+
                 </div>
 
                 <h3>
+
                     HTML
+
                 </h3>
 
                 <p>
-                    Creating structured and semantic web pages.
+
+                    Creating structured
+                    and semantic websites.
+
                 </p>
 
             </div>
 
 
-            <!-- CSS -->
+            <div class="card">
 
-            <div class="skill-card">
+                <div class="icon">
 
-                <div class="skill-icon">
                     CSS
+
                 </div>
 
                 <h3>
+
                     CSS
+
                 </h3>
 
                 <p>
-                    Designing responsive and attractive websites.
+
+                    Designing responsive
+                    and modern websites.
+
                 </p>
 
             </div>
 
 
-            <!-- JAVASCRIPT -->
+            <div class="card">
 
-            <div class="skill-card">
+                <div class="icon">
 
-                <div class="skill-icon">
                     JS
+
                 </div>
 
                 <h3>
+
                     JavaScript
+
                 </h3>
 
                 <p>
-                    Adding interactive features to websites.
+
+                    Adding interactive
+                    functionality.
+
                 </p>
 
             </div>
 
 
-            <!-- GIT & GITHUB -->
+            <div class="card">
 
-            <div class="skill-card">
+                <div class="icon">
 
-                <div class="skill-icon">
-                    Git
+                    GIT
+
                 </div>
 
                 <h3>
+
                     Git & GitHub
+
                 </h3>
 
                 <p>
-                    Managing and sharing projects using Git.
+
+                    Version control and
+                    project management.
+
                 </p>
 
             </div>
@@ -219,113 +266,127 @@
     </section>
 
 
-    <!-- ================= PROJECTS SECTION ================= -->
 
-    <section id="projects">
+    <!-- ================= PROJECTS ================= -->
 
-        <h2>
-            Projects
+    <section id="projects"
+             class="section">
+
+        <p class="section-tag">
+
+            MY WORK
+
+        </p>
+
+        <h2 class="section-title">
+
+            Featured Projects
+
         </h2>
 
+        <div class="cards projects">
 
-        <div class="projects-container">
+            <div class="card project-card">
 
+                <div class="project-number">
 
-            <!-- PROJECT 1 -->
+                    01
 
-            <div class="project-card">
+                </div>
 
                 <h3>
+
                     Portfolio Website
+
                 </h3>
 
                 <p>
 
-                    A responsive portfolio website built using
+                    A responsive portfolio
+                    website built using
                     HTML and CSS.
 
                 </p>
 
-            </div>
+                <span class="tech">
 
+                    HTML • CSS
 
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <h3>
-                    Weather App
-                </h3>
-
-                <p>
-
-                    A simple weather application using
-                    HTML, CSS and JavaScript.
-
-                </p>
+                </span>
 
             </div>
 
 
-            <!-- PROJECT 3 -->
 
-            <div class="project-card">
+            <div class="card project-card">
+
+                <div class="project-number">
+
+                    02
+
+                </div>
 
                 <h3>
+
                     Calculator
+
                 </h3>
 
                 <p>
 
-                    A basic calculator created using
-                    HTML, CSS and JavaScript.
+                    A simple calculator
+                    built using HTML,
+                    CSS and JavaScript.
 
                 </p>
 
-            </div>
+                <span class="tech">
 
+                    HTML • CSS • JavaScript
 
-            <!-- PROJECT 4 -->
-
-            <div class="project-card">
-
-                <h3>
-                    Smart Expense Tracker
-                </h3>
-
-                <p>
-
-                    A smart expense tracker project created
-                    using Python.
-
-                </p>
+                </span>
 
             </div>
 
         </div>
 
     </section>
+        <!-- ================= EXPERIENCE ================= -->
 
+    <section id="experience"
+             class="section light-section">
 
-    <!-- ================= EDUCATION SECTION ================= -->
+        <p class="section-tag">
 
-    <section id="education">
+            EXPERIENCE
 
-        <h2>
-            Education
+        </p>
+
+        <h2 class="section-title">
+
+            Internship Experience
+
         </h2>
 
+        <div class="education-box">
 
-        <div class="education-card">
+            <div class="education-year">
+
+                2026
+
+            </div>
 
             <h3>
-                B.Sc. Information Technology
+
+                Front-End Web Development Intern
+
             </h3>
 
             <p>
 
-                Currently pursuing B.Sc. IT and developing skills
-                in Front-End Web Development.
+                Successfully completed internship tasks by
+                building responsive web pages using HTML,
+                CSS and JavaScript while learning Git and GitHub.
 
             </p>
 
@@ -334,61 +395,178 @@
     </section>
 
 
-    <!-- ================= CONTACT SECTION ================= -->
 
-    <section id="contact">
+    <!-- ================= EDUCATION ================= -->
 
-        <h2>
-            Contact Me
-        </h2>
+    <section id="education"
+             class="section">
 
-        <p>
+        <p class="section-tag">
 
-            Feel free to get in touch with me for any opportunities
-            or collaborations.
+            MY EDUCATION
 
         </p>
 
+        <h2 class="section-title">
 
-        <!-- DAY 7 BUTTON EVENT -->
+            Education
 
-        <a href="mailto:shifasiddiqui1145@gmail.com"
+        </h2>
+
+        <div class="education-box">
+
+            <div class="education-year">
+
+                CURRENTLY PURSUING
+
+            </div>
+
+            <h3>
+
+                Bachelor of Science (Information Technology)
+
+            </h3>
+
+            <p>
+
+                Currently pursuing B.Sc. Information Technology
+                and improving my skills in Front-End
+                Web Development.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= RESUME ================= -->
+
+    <section id="resume"
+             class="section light-section">
+
+        <p class="section-tag">
+
+            MY RESUME
+
+        </p>
+
+        <h2 class="section-title">
+
+            Download Resume
+
+        </h2>
+
+        <p class="contact-text">
+
+            Click the button below to download my resume.
+
+        </p>
+
+        <a href="resume.pdf"
            class="btn"
-           id="emailBtn">
+           download>
 
-            Email Me
+            Download Resume
 
         </a>
 
     </section>
 
 
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact"
+             class="section">
+
+        <p class="section-tag">
+
+            CONTACT
+
+        </p>
+
+        <h2 class="section-title">
+
+            Let's Connect
+
+        </h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Contact Information</h3>
+
+                <p>📧 shifasiddiqui1145@gmail.com</p>
+
+                <p>💻 GitHub: https://www.linkedin.com/in/shifa-siddiqui-319097378?utm_source=share_via&utm_content=profile&utm_medium=member_android</p>
+
+                <p>💼 LinkedIn: https://github.com/shifa-35</p>
+
+            </div>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Your Email"
+                    required>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Enter Your Message"
+                    required></textarea>
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
     <!-- ================= FOOTER ================= -->
 
     <footer>
 
+        <div class="footer-logo">
+
+            Shifa<span>.</span>
+
+        </div>
+
         <p>
 
-            © 2026 Shifa Siddiqui. All Rights Reserved.
+            © 2026 Shifa Siddiqui.
+            All Rights Reserved.
 
         </p>
 
     </footer>
 
 
-    <!-- ================= SCROLL TO TOP BUTTON ================= -->
-
-    <button id="scrollTopBtn" title="Go to Top">
-
-        ↑
-
-    </button>
-
 
     <!-- ================= JAVASCRIPT ================= -->
 
     <script src="script.js"></script>
-
 
 </body>
 

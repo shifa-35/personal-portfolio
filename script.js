@@ -1,77 +1,39 @@
-// ========================================
-// DAY 7 - JAVASCRIPT
-// Shifa Siddiqui Portfolio
-// ========================================
+// ==============================
+// DAY 10 - CONTACT FORM VALIDATION
+// ==============================
 
+const contactForm = document.getElementById("contactForm");
 
-// ========================================
-// 1. BUTTON EVENT
-// Email Me Button
-// ========================================
+contactForm.addEventListener("submit", function (e) {
 
-const emailBtn = document.getElementById("emailBtn");
+    e.preventDefault();
 
-emailBtn.addEventListener("click", function () {
+    const name = document.getElementById("name").value.trim();
 
-    alert("Thank you for contacting me! I will get back to you soon.");
+    const email = document.getElementById("email").value.trim();
 
-});
+    const message = document.getElementById("message").value.trim();
 
+    if (name === "" || email === "" || message === "") {
 
-// ========================================
-// 2. DOM MANIPULATION
-// Show More About Me
-// ========================================
+        alert("Please fill all the fields.");
 
-const showMoreBtn = document.getElementById("showMoreBtn");
-
-const aboutText = document.getElementById("aboutText");
-
-
-showMoreBtn.addEventListener("click", function () {
-
-    aboutText.textContent =
-        "Hello! I am Shifa Siddiqui, a B.Sc. IT student and aspiring Front-End Developer. I am passionate about creating clean, responsive and user-friendly websites. I am currently improving my skills in HTML, CSS, JavaScript and GitHub while working on different web development projects.";
-
-    showMoreBtn.textContent = "Information Updated";
-
-});
-
-
-// ========================================
-// 3. SCROLL TO TOP
-// ========================================
-
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-
-// Show button when user scrolls down
-
-window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 300) {
-
-        scrollTopBtn.style.display = "block";
-
-    } else {
-
-        scrollTopBtn.style.display = "none";
+        return;
 
     }
 
-});
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
+    if (!email.match(emailPattern)) {
 
-// Scroll to top when button is clicked
+        alert("Please enter a valid email address.");
 
-scrollTopBtn.addEventListener("click", function () {
+        return;
 
-    window.scrollTo({
+    }
 
-        top: 0,
+    alert("Thank you! Your message has been sent successfully.");
 
-        behavior: "smooth"
-
-    });
+    contactForm.reset();
 
 });
